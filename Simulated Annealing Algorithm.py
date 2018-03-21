@@ -48,22 +48,28 @@ def iterative_inner(f = sum(),x_0 = None,g = None,t_0 = 100,iter_num = 100):
     the best value:return:
     '''
     f_i = f(x_0);
+    t = t_0
     size = math.floor(math.log(x_0,2))+1
     rand_num = random.randint(2,size)
     #choose N(x)
-    D = Domain(g,init=0,to=30,step=0.00001)
+    D = Domain(g,init=0,to=30,step=0.00001) #find the domain
     N_x = []
+    # define domain
     for x_1 in D:
-        dist = distance(x_1= x_0,x_2 = x_1)
+        dist = distance(x_1= x_0,x_2 = x_1) #calculate distance
         if dist<=1:
             N_x.append(x_1)
-    x_1 = N_x[rand_num]
+    x_1 = N_x[rand_num] #Randomly take elements in the field
+    f_j = f(x_1)
+    delta_f = f_j-f_i
+    G_ij = 1/len(D)
+    A_ij = math.exp(-delta_f/t)
     #x_0 = encode(x_0)
     #x_1 = x_0[:rand_num]+turnbio(x_0[rand_num])+x_0[rand_num+1:]
-    G_ij = 1; #Transfer probability
-    A_ij = 1; #Accepted probability
+    #G_ij = 1; #Transfer probability
+    #A_ij = 1; #Accepted probability
     p_ij = G_ij*A_ij;
-    f_j = f(x_1)
+
     return x_0
 
 def init_time(t_0 = 100,T=1,chi=0.9,R_0 = 0):
