@@ -120,43 +120,6 @@ for i in list(range(len(f_1))):
 f_2 = sum(f_2)/(len(f_2)-1)
 detal_0 = 6*math.sqrt(f_2)
 
-def init_time(t_0=100, K=1, chi=0.9, R=0, f=None, g=None):
-    X = []
-    X.append(tuple(x_0))
-    for i in list(range(0, 50)):
-        X.append(tuple(iterative_inner(f=obf, x_0=X[i], g=supg, t_0=t_0, iter_num=20)))
-    R = len(set(X)) / len(X)
-    if chi - 0.05 <= R <= chi + 0.05:
-        return t_0
-    else:
-        t_0 = t_0 + K
-        R_0 = R
-        X = []
-        X.append((0.2, 0.3, 0.2))
-        for i in list(range(0, 50)):
-            X.append(tuple(iterative_inner(f=obf, x_0=X[i], g=supg, t_0=t_0, iter_num=20)))
-        R = len(set(X)) / len(X)
-        while R < chi - 0.05 or R > chi + 0.05 and t_0 > 0.1:
-            if R_0 < chi and R < chi:
-                t_0 = t_0 + K
-            elif R_0 > chi and R > chi:
-                t_0 = t_0 - K
-            elif R_0 > chi and R < chi:
-                t_0 = t_0 + K / 2
-            else:
-                t_0 = t_0 - K / 2
-            R_0 = R
-            X = []
-            X.append((0.2, 0.3, 0.2))
-            for i in list(range(0, 50)):
-                try:
-                    X.append(tuple(iterative_inner(f=obf, x_0=X[i], g=supg, t_0=t_0, iter_num=20)))
-                except:
-                    print(X[i])
-            R = len(set(X)) / len(X)
-    return t_0
-
-
 
 T = [13.9]
 M = 1000
