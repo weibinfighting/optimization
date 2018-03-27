@@ -47,11 +47,11 @@ def iterative_inner(f=sum, x_0=None, g=None, t_0=100, iter_num=20):
     p = len(x_0)
     for n in list(range(0, iter_num)):
         f_i= f(x_0)
-        N_x = neighbor_x(x_0, p=len(x_0), d=0.4)
+        N_x = neighbor_x(x_0, p=len(x_0), d=0.9)
         x_1 = N_x
         # choose N(x)
         while not g(x_1):
-            N_x = neighbor_x(x_0, p=len(x_0), d=0.4)
+            N_x = neighbor_x(x_0, p=len(x_0), d=0.9)
             x_1 = N_x
         f_j = f(x_1)
         delta_f = f_j - f_i

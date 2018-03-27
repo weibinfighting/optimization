@@ -1,12 +1,12 @@
 import random
 import math
-import SA.py
+import SA
 def obf(x):
     L = 3
     r = []
     for n in list(range(0, L)):
         r.append(math.sqrt(x[n]))
-    result = sum(r)
+    result = -sum(r)
     return result
 
 
@@ -39,13 +39,18 @@ T = [detal_0*K]
 M = 1000
 for i in list(range(M)):
     T.append(T[i]*0.99)
-x_0 = []
-x_0.append(random.random())
-x_0.append(random.random()*math.sqrt((1-x_0[0])/2))
-x_0.append(random.random()*pow((1-x_0[0]-2*x_0[1]**2)/3,1/3))
-x = []
-x.append(x_0)
-for i in list(range(len(T))):
-    print(x[i])
-    x.append(SA.iterative_inner(f=obf, x_0=x[i], g=supg, t_0=T[i], iter_num=100))
-print(obf(x[1000]))
+f = open('SA.txt','a+')
+f.write(str(T[0]))
+for n in list(range(200)):
+    x_0 = []
+    x_0.append(random.random())
+    x_0.append(random.random()*math.sqrt((1-x_0[0])/2))
+    x_0.append(random.random()*pow((1-x_0[0]-2*x_0[1]**2)/3,1/3))
+    x = []
+    x.append(x_0)
+    for i in list(range(len(T))):
+        x.append(SA.iterative_inner(f=obf, x_0=x[i], g=supg, t_0=T[i], iter_num=100))
+    f.write(str(x[M]))
+    f.write(str(-obf(x[M])))
+    f.write(str(-obf([0.642,0.3964,0.302])))
+f.close()
