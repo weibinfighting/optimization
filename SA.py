@@ -1,45 +1,11 @@
 # -*-coding:utf-8-*-
 # coding=utf-8
-import numpy as np
 import random
 import math
 
 
-def obf(x):
-    L = 3
-    r = []
-    for n in list(range(0, L)):
-        r.append(math.sqrt(x[n]))
-    result = sum(r)
-    return result
 
 
-def supg(x):
-    if x[0] >= 0 and x[1] >= 0 and x[2] >= 0:
-        if x[0] + 2 * x[1] ** 2 + 3 * x[2] ** 2 <= 1:
-            return True
-        else:
-            return False
-    else:
-        return False
-
-
-def encode(x_0):
-    x_0 = bin(x_0)
-    return x_0
-
-
-def decode(x_0):
-    x_0 = int(x_0, 10);
-    return x_0
-
-
-def turnbio(str):
-    if str == '1':
-        x = '0';
-    else:
-        x = '1';
-    return x
 
 
 def neighbor_x(x=1, p=1, d=1):
@@ -106,33 +72,4 @@ def iterative_inner(f=sum, x_0=None, g=None, t_0=100, iter_num=20):
     # A_ij = 1; #Accepted probability
     # p_ij = G_ij*A_ij;
 
-f_1 = []
-for i in list(range(100)):
-    x_0 = []
-    x_0.append(random.random())
-    x_0.append(random.random()*math.sqrt((1-x_0[0])/2))
-    x_0.append(random.random()*pow((1-x_0[0]-2*x_0[1]**2)/3,1/3))
-    f_1.append(obf(x_0))
-average_f = sum(f_1)/len(f_1)
-f_2 = []
-for i in list(range(len(f_1))):
-    f_2.append((f_1[i]-average_f)**2)
-f_2 = sum(f_2)/(len(f_2)-1)
-detal_0 = 6*math.sqrt(f_2)
-
-
-T = [13.9]
-M = 1000
-for i in list(range(M)):
-    T.append(T[i]*0.99)
-x_0 = []
-x_0.append(random.random())
-x_0.append(random.random()*math.sqrt((1-x_0[0])/2))
-x_0.append(random.random()*pow((1-x_0[0]-2*x_0[1]**2)/3,1/3))
-x = []
-x.append(x_0)
-for i in list(range(len(T))):
-    print(x[i])
-    x.append(iterative_inner(f=obf, x_0=x[i], g=supg, t_0=T[i], iter_num=100))
-print(obf(x[1000]))
-__version__ = '0.1'
+__version__ = '0.2'
