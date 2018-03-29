@@ -18,17 +18,20 @@ def neighbor_x(x=1, p=1, d=1):
     '''
     if p == 1:
         N_x = (-1) ** random.randint(0, 1) * random.random() * d
+        N_x = N_x+x
         return N_x
     elif p == 2:
         N_xx = (-1) ** random.randint(0, 1) * random.random()
         N_xy = (-1) ** random.randint(0, 1) * random.random(0, math.sqrt(1 - N_xx ** 2))
         N_x = [N_xx * d, N_xy * d]
+        N_x = [x[0] + N_x[0], x[1] + N_x[1]]
         return N_x
     elif p == 3:
         N_xx = (-1) ** random.randint(0, 1) * random.random()
         N_xy = (-1) ** random.randint(0, 1) * random.random() * math.sqrt(1 - N_xx ** 2)
         N_xz = (-1) ** random.randint(0, 1) * random.random() * math.sqrt(1 - N_xx ** 2 - N_xy ** 2)
         N_x = [N_xx * d, N_xy * d, N_xz * d]
+        N_x = [x[0]+N_x[0],x[1]+N_x[1],x[2]+N_x[2]]
         return N_x
     else:
         print('The current program does not support higher dimensions temporarily')
@@ -47,17 +50,16 @@ def iterative_inner(f=sum, x_0=None, g=None, t_0=100, iter_num=20):
     p = len(x_0)
     for n in list(range(0, iter_num)):
         f_i= f(x_0)
-        N_x = neighbor_x(x_0, p=len(x_0), d=0.9)
+        N_x = neighbor_x(x_0, p=len(x_0), d=0.3)
         x_1 = N_x
         # choose N(x)
         while not g(x_1):
-            N_x = neighbor_x(x_0, p=len(x_0), d=0.9)
+            N_x = neighbor_x(x_0, p=len(x_0), d=0.3)
             x_1 = N_x
         f_j = f(x_1)
         delta_f = f_j - f_i
         if delta_f <= 0:
             A_ij = 1
-            x_0 = x_1  # Replace the initial value
         else:
             A_ij = math.exp(-delta_f/t_0)
         if A_ij > random.random():
@@ -72,4 +74,4 @@ def iterative_inner(f=sum, x_0=None, g=None, t_0=100, iter_num=20):
     # A_ij = 1; #Accepted probability
     # p_ij = G_ij*A_ij;
 
-__version__ = '0.2'
+__version__ = '0.3'

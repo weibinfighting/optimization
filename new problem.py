@@ -34,14 +34,14 @@ for i in list(range(len(f_1))):
 f_2 = sum(f_2)/(len(f_2)-1)
 detal_0 = 6*math.sqrt(f_2)
 
-K=10
+K=3
 T = [detal_0*K]
-M = 1000
+M = 800
 for i in list(range(M)):
-    T.append(T[i]*0.99)
+    T.append(T[i]*0.98)
 f = open('SA.txt','a+')
 f.write(str(T[0]))
-for n in list(range(200)):
+for n in list(range(20)):
     x_0 = []
     x_0.append(random.random())
     x_0.append(random.random()*math.sqrt((1-x_0[0])/2))
@@ -49,8 +49,9 @@ for n in list(range(200)):
     x = []
     x.append(x_0)
     for i in list(range(len(T))):
-        x.append(SA.iterative_inner(f=obf, x_0=x[i], g=supg, t_0=T[i], iter_num=100))
-    f.write(str(x[M]))
-    f.write(str(-obf(x[M])))
-    f.write(str(-obf([0.642,0.3964,0.302])))
+        x.append(SA.iterative_inner(f=obf, x_0=x[i], g=supg, t_0=T[i], iter_num=200))
+        f.write('dat:'+str(x[i])+'\n')
+    f.write('coordinate:'+str(x[M])+'\n')
+    f.write('object:'+str(-obf(x[M]))+'\n')
+    f.write('max:'+str(-obf([0.642,0.3964,0.302]))+'\n---------------------\n')
 f.close()
