@@ -41,7 +41,7 @@ for i in list(range(M)):
     T.append(T[i]*0.98)
 f = open('SA.txt','a+')
 f.write(str(T[0]))
-for n in list(range(20)):
+for n in list(range(10)):
     x_0 = []
     x_0.append(random.random())
     x_0.append(random.random()*math.sqrt((1-x_0[0])/2))

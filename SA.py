@@ -50,13 +50,14 @@ def iterative_inner(f=sum, x_0=None, g=None, t_0=100, iter_num=20):
     p = len(x_0)
     for n in list(range(0, iter_num)):
         f_i= f(x_0)
-        N_x = neighbor_x(x_0, p=len(x_0), d=0.3)
+        N_x = neighbor_x(x_0, p=p, d=0.1)
         x_1 = N_x
         # choose N(x)
         while not g(x_1):
-            N_x = neighbor_x(x_0, p=len(x_0), d=0.3)
+            N_x = neighbor_x(x_0, p=p, d=0.1)
             x_1 = N_x
         f_j = f(x_1)
+        print('***************' + str(x_1) + '****************\n'+'----'+str(f_j)+'----\n')
         delta_f = f_j - f_i
         if delta_f <= 0:
             A_ij = 1
