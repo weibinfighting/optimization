@@ -68,7 +68,9 @@ city_coord = readcitycoord(filename)
 x_0 = initnum(N);
 def neighbor_city(x):
     a,b=math.floor(random.random()*N),math.floor(random.random()*N)
-    x_new = x
+    x_new = []
+    for i in list(range(len(x))):
+        x_new.append(x[i])
     while a==b:
         b=math.floor(random.random()*N)
     x_new[a]=x[b]
