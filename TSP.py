@@ -94,24 +94,16 @@ def iterative_inner(f=obf, x_0=None, y = None, t_0=100, iter_num=20):
         N_x = neighbor_city(x_0)
         x_1 = N_x
         f_j = f(x_1,y)
-        print('---' + str(x_0) + '---\n'+'---'+str(f_i)+'---')
-        print('***' + str(x_1) + '***\n'+'---'+str(f_j)+'---\n')
         delta_f = f_j - f_i
-        print(delta_f)
         delta_f = delta_f/200
-        print(delta_f)
-        print('f_i is %f'%f_i)
         if delta_f <= 0:
             A_ij = 1
         else:
             A_ij = math.exp(-delta_f/t_0)
-        print('A_ij:'+str(A_ij)+'\n'+'t:'+str(t_0)+'\nx_0:'+str(x_0))
         if A_ij > random.random():
             x_0 = x_1
         else:
-            print('x_0 not change')
             x_0=x_0
-        print('now f_1 is %f'%f(x_0,y))
     return x_0
 
 
@@ -136,5 +128,4 @@ for i in list(range(M)):
 x=x_0
 for t in T:
     x=iterative_inner(f=obf,x_0=x,y=city_coord,t_0=t,iter_num=100)
-    print(x)
 print(obf(x,city_coord))
