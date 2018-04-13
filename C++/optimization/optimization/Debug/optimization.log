@@ -1,3 +1,2 @@
-﻿  optimization.cpp
-  optimization.vcxproj -> H:\optimization\C++\optimization\Debug\optimization.exe
-  optimization.vcxproj -> H:\optimization\C++\optimization\Debug\optimization.pdb (Full PDB)
+﻿SA.obj : error LNK2005: _main 已经在 optimization.obj 中定义
+H:\optimization\C++\optimization\Debug\optimization.exe : fatal error LNK1169: 找到一个或多个多重定义的符号

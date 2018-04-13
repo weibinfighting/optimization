@@ -32,5 +32,8 @@
     <ClCompile Include="optimization.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="SA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
