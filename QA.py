@@ -22,7 +22,7 @@ def readcitycoord(filename):
     f.close()
     return a
 
-N,pop_size = 30,50
+N,pop_size = 10,50
 filename = 'DATA30.dat'
 city_coord = readcitycoord(filename)
 
@@ -44,76 +44,81 @@ def initnum(N=30):
                 continue;
     return A
 
-def nochange(n_cross):
-    Noc,n = [],1;
+def Xchange(n_cross):
+    Xc,n = [],1;
     while n <=n_cross:
-        Noc.append(math.floor(random.random()*N))
-        if len(set(Noc))<=n_cross:
+        newx = math.floor(random.random()*N)
+        ifT = 1
+        for i in Xc:
+            if i==newx:
+                ifT = 0
+        if ifT==1:
+            Xc.append(newx)
             n = n+1;
         else:
             continue;
-    return Noc
+    return Xc
 
-def cross(x,y):
+def cross(x,y,qc):
     l_x,l_y = len(x),len(y)
     if l_x!=l_y:
         print('two parm lengh is not same!\n')
         exit(1);
-    noc = nochange(n_cross);
-    l = len(noc)
+    l = len(qc)
     class zx:
         value = [];
         index = [];
-    for i in noc:
+    for i in qc:
         zx.value.append(x[i])
     for x_v in zx.value:
-        for i in list(range(l_y)):
-            if x_v==y[i]:
-                zx.index.append(i);
-                break;
-            else:
-                continue;
-    z_xs=sorted(zx.index)
+        zx.index.append(y.index(x_v))
     z_x = []
-    for i in list(range(l)):
-        for j in list(range(l)):
-            if z_xs[i]==zx.value[j]:
-                z_x.append(zx.index[j]);
-                break;
+    z_xs = sorted(zx.index)
+    m = 0
+    for i in list(range(N)):
+        change = 0
+        for j in qc:
+            if i==j:
+                change = 1;
             else:
-                continue;
-
+                continue
+        if change==1:
+            z_x.append(zx.value[zx.index.index(z_xs[m])]);
+            m = m+1;
+        else:
+            z_x.append(x[i])
     class zy:
         value = [];
         index = [];
-    for i in noc:
+    for i in qc:
         zy.value.append(y[i])
     for y_v in zy.value:
-        for i in list(range(l_x)):
-            if y_v == x[i]:
-                zy.index.append(i);
-                break;
-            else:
-                continue;
-    z_ys = sorted(zy.index)
+        zy.index.append(x.index(y_v))
     z_y = []
-    for i in list(range(l)):
-        for j in list(range(l)):
-            if z_ys[i] == zy.value[j]:
-                z_y.append(zy.index[j]);
-                break;
+    z_ys = sorted(zy.index)
+    m = 0
+    for i in list(range(N)):
+        change = 0
+        for j in qc:
+            if i==j:
+                change = 1;
             else:
-                continue;
-    x = z_x;
-    y = z_y;
-    return x,y
+                continue
+        if change==1:
+            z_y.append(zy.value[zy.index.index(z_ys[m])]);
+            m=m+1
+        else:
+            z_y.append(y[i])
+    return z_x,z_y
 
 x=[];
 for i in list(range(pop_size)):
     x.append(initnum(N));
-n_cross = 23
-x_noc = nochange(n_cross);
-
-print(x[0],x[1])
-z = cross(x[0],x[1])
-print(z)
+n_cross = 5
+x_c = Xchange(n_cross);
+new_x = []
+for i in list(range(0,pop_size,2)):
+    z = cross(x[i],x[i+1],x_c)
+    new_x.append(z[0])
+    new_x.append(z[1])
+print(len(new_x))
