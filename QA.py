@@ -22,9 +22,35 @@ def readcitycoord(filename):
     f.close()
     return a
 
-N,pop_size = 10,50
+N,pop_size = 30,50
 filename = 'DATA30.dat'
 city_coord = readcitycoord(filename)
+
+def distance(x,y):
+    #x,y=a[0],a[1];
+    if isinstance(x,list)and isinstance(y,list):
+        d = []
+        for i in list(range(0,len(x))):
+            d.append((x[i]-y[i])**2)
+        dis = (sum(d))**0.5
+        return dis
+    elif not(isinstance(x,list) or isinstance(y,list)):
+        dis = math.sqrt((x-y)^2)
+        return dis
+    else:
+        print('Please check type of x_1 and x_2')
+        exit(1)
+
+def obf(x=None,coord=None):
+    if x == None or coord == None:
+        print('The parament is None!');
+        exit(1);
+    D = [];
+    for i in list(range(len(x)-1)):
+        D.append(distance(coord[x[i]],coord[x[i+1]]));
+    D = sum(D)
+    return D
+
 
 def initnum(N=30):
     class Cnum:
@@ -111,6 +137,20 @@ def cross(x,y,qc):
             z_y.append(y[i])
     return z_x,z_y
 
+def variation(X,P=0.02,qn=2):
+    if random.random()<=P:
+        n = math.floor(random.random()*N);
+        m = math.floor(random.random()*N);
+        while n==m:
+            m = math.floor(random.random()*N);
+        variable = X[n];
+        X[n] = X[m];
+        X[m] = variable;
+        return X;
+    else:
+        return X;
+
+
 x=[];
 for i in list(range(pop_size)):
     x.append(initnum(N));
@@ -119,6 +159,17 @@ x_c = Xchange(n_cross);
 new_x = []
 for i in list(range(0,pop_size,2)):
     z = cross(x[i],x[i+1],x_c)
-    new_x.append(z[0])
-    new_x.append(z[1])
-print(len(new_x))
+    new_x.append(variation(z[0]))
+    new_x.append(variation(z[1]))
+fitvalue = [];
+for i in list(range(pop_size)):
+    fitvalue.append(obf(new_x[i],city_coord))
+P_in,Acp = [],[];
+allfv = sum(fitvalue);
+Acd = 0;
+for i in list(range(pop_size)):
+    Acd = Acd+fitvalue[i]
+    P_in.append(fitvalue[i]/allfv);
+    Acp.append(Acd/allfv)
+
+
