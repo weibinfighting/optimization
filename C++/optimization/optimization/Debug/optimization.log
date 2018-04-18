@@ -1,4 +1,6 @@
 ﻿  SA.cpp
-h:\optimization\c++\optimization\optimization\sa.cpp(52): warning C4101: “P”: 未引用的局部变量
+h:\optimization\c++\optimization\optimization\sa.cpp(64): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+h:\optimization\c++\optimization\optimization\sa.cpp(67): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+h:\optimization\c++\optimization\optimization\sa.cpp(135): warning C4101: “P”: 未引用的局部变量
   optimization.vcxproj -> H:\optimization\C++\optimization\Debug\optimization.exe
   optimization.vcxproj -> H:\optimization\C++\optimization\Debug\optimization.pdb (Full PDB)
