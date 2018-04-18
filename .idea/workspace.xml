@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="371413b4-1f83-49f9-8442-b1fddedd564a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/C++/optimization/.vs/optimization/v14/.suo" afterPath="$PROJECT_DIR$/C++/optimization/.vs/optimization/v14/.suo" />
+      <change beforePath="$PROJECT_DIR$/C++/optimization/Debug/optimization.exe" afterPath="$PROJECT_DIR$/C++/optimization/Debug/optimization.exe" />
+      <change beforePath="$PROJECT_DIR$/C++/optimization/Debug/optimization.ilk" afterPath="$PROJECT_DIR$/C++/optimization/Debug/optimization.ilk" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/Debug/optimization.pdb" afterPath="$PROJECT_DIR$/C++/optimization/Debug/optimization.pdb" />
-      <change beforePath="$PROJECT_DIR$/C++/optimization/optimization.VC.db" afterPath="$PROJECT_DIR$/C++/optimization/optimization.VC.db" />
-      <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/optimization.log" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/optimization.log" />
+      <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/SA.obj" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/SA.obj" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/vc140.idb" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/vc140.idb" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/vc140.pdb" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/vc140.pdb" />
+      <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/SA.cpp" afterPath="$PROJECT_DIR$/C++/optimization/optimization/SA.cpp" />
+      <change beforePath="$PROJECT_DIR$/QA.py" afterPath="$PROJECT_DIR$/QA.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/optimization$QA.coverage" NAME="QA Coverage Results" MODIFIED="1523887986222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/optimization$QA.coverage" NAME="QA Coverage Results" MODIFIED="1524041142964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/optimization$new_problem.coverage" NAME="new problem Coverage Results" MODIFIED="1522374139062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/optimization$Simulated_Annealing_Algorithm.coverage" NAME="Simulated Annealing Algorithm Coverage Results" MODIFIED="1522151642857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/optimization$TSP.coverage" NAME="TSP Coverage Results" MODIFIED="1524030913712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -51,20 +53,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QA.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QA.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/QA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="166" column="17" lean-forward="false" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
+            <state relative-caret-position="394">
+              <caret line="190" column="22" lean-forward="false" selection-start-line="190" selection-start-column="22" selection-end-line="190" selection-end-column="22" />
               <folding>
                 <element signature="e#22#35#0" expanded="true" />
+                <element signature="e#984#1202#0" expanded="false" />
+                <element signature="e#1228#1608#0" expanded="false" />
+                <element signature="e#1636#1919#0" expanded="false" />
                 <element signature="e#1944#3122#0" expanded="false" />
+                <element signature="e#3158#3450#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TSP.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TSP.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TSP.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -206,7 +212,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TSP">
+  <component name="RunManager" selected="Python.QA">
     <configuration name="QA" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -291,8 +297,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.TSP" />
-        <item index="1" class="java.lang.String" itemvalue="Python.QA" />
+        <item index="0" class="java.lang.String" itemvalue="Python.QA" />
+        <item index="1" class="java.lang.String" itemvalue="Python.TSP" />
         <item index="2" class="java.lang.String" itemvalue="Python.new problem" />
         <item index="3" class="java.lang.String" itemvalue="Python.Simulated Annealing Algorithm" />
       </list>
@@ -438,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523974648302</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="SA C++ compelet">
+      <created>1524031115045</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1524031115046</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -455,12 +468,12 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6709531" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="295" height="584" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6664145" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="295" height="584" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2611367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31797236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33509833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10514372" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -530,23 +543,33 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="35" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/QA.py</url>
+          <line>184</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/QA.py</url>
+          <line>181</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/QA.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/QA.py</url>
+          <line>164</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/QA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="e#22#35#0" expanded="true" />
-            <element signature="e#1944#3122#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SA.txt" />
     <entry file="file://$PROJECT_DIR$/new problem.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -573,7 +596,11 @@
           <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
             <element signature="e#22#35#0" expanded="true" />
+            <element signature="e#984#1202#0" expanded="false" />
+            <element signature="e#1228#1608#0" expanded="false" />
+            <element signature="e#1636#1919#0" expanded="false" />
             <element signature="e#1944#3122#0" expanded="false" />
+            <element signature="e#3158#3450#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -605,7 +632,11 @@
           <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
             <element signature="e#22#35#0" expanded="true" />
+            <element signature="e#984#1202#0" expanded="false" />
+            <element signature="e#1228#1608#0" expanded="false" />
+            <element signature="e#1636#1919#0" expanded="false" />
             <element signature="e#1944#3122#0" expanded="false" />
+            <element signature="e#3158#3450#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -637,7 +668,11 @@
           <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
             <element signature="e#22#35#0" expanded="true" />
+            <element signature="e#984#1202#0" expanded="false" />
+            <element signature="e#1228#1608#0" expanded="false" />
+            <element signature="e#1636#1919#0" expanded="false" />
             <element signature="e#1944#3122#0" expanded="false" />
+            <element signature="e#3158#3450#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -669,7 +704,11 @@
           <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
             <element signature="e#22#35#0" expanded="true" />
+            <element signature="e#984#1202#0" expanded="false" />
+            <element signature="e#1228#1608#0" expanded="false" />
+            <element signature="e#1636#1919#0" expanded="false" />
             <element signature="e#1944#3122#0" expanded="false" />
+            <element signature="e#3158#3450#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -960,17 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="166" column="17" lean-forward="false" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
-          <folding>
-            <element signature="e#22#35#0" expanded="true" />
-            <element signature="e#1944#3122#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -987,6 +1015,37 @@
           <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
             <element signature="e#16#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="1667" column="0" lean-forward="false" selection-start-line="1667" selection-start-column="0" selection-end-line="1667" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="190" column="22" lean-forward="false" selection-start-line="190" selection-start-column="22" selection-end-line="190" selection-end-column="22" />
+          <folding>
+            <element signature="e#22#35#0" expanded="true" />
+            <element signature="e#984#1202#0" expanded="false" />
+            <element signature="e#1228#1608#0" expanded="false" />
+            <element signature="e#1636#1919#0" expanded="false" />
+            <element signature="e#1944#3122#0" expanded="false" />
+            <element signature="e#3158#3450#0" expanded="false" />
           </folding>
         </state>
       </provider>

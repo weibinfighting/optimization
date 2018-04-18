@@ -10,7 +10,7 @@ using namespace std;
 
 #define N 30  // number of cities
 #define M 1500 //number of iterative
-int x[N] = { 1, 9, 3, 21, 11, 27, 7, 5, 6, 15, 2, 29, 22, 18, 28, 0, 4, 26, 8, 20, 16, 19, 12, 25, 13, 17, 24, 14, 10, 23 };
+int x[N];
 double coord[N][2];
 
 double random()
@@ -80,7 +80,7 @@ void iterative_inner(double t_0, int iter_num)
 		f_i = obf(x);
 		x_1 = nerighbor_city(x);
 		f_j = obf(x_1);
-		delta_f = (f_j - f_i)/200;
+		delta_f = (f_j - f_i)/20;
 		//cout << "x_0:" << '\t';
 		//for (int i = 0; i < N; i++)
 		//	cout << x[i] << "->";

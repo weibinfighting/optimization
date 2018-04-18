@@ -150,26 +150,47 @@ def variation(X,P=0.02,qn=2):
     else:
         return X;
 
+def findgroup(pop_size,Acp):
+    next_p = random.random();
+    for i in list(range(pop_size)):
+        if Acp[i]<next_p and next_p<=Acp[i+1]:
+            return i;
+        elif 0<next_p and next_p<=Acp[0]:
+            return 0;
+        else:
+            continue;
+
+def generation(x):
+    x_c = Xchange(n_cross);
+    new_x = []
+    for i in list(range(0,pop_size,2)):
+        z = cross(x[i],x[i+1],x_c)
+        new_x.append(variation(z[0]))
+        new_x.append(variation(z[1]))
+    fitvalue = [];
+    for i in list(range(pop_size)):
+        fitvalue.append(obf(new_x[i],city_coord))
+    Acp = [];
+    allfv = sum(fitvalue);
+    Acd = 0;
+    for i in list(range(pop_size)):
+        Acd = Acd+fitvalue[i]
+        Acp.append(Acd/allfv)
+    next_group = [];
+    for i in list(range(pop_size)):
+        next_group.append(findgroup(pop_size,Acp));
+    next_x = [];
+    for i in list(range(pop_size)):
+        next_x.append(new_x[next_group[i]]);
+    return next_x
 
 x=[];
 for i in list(range(pop_size)):
     x.append(initnum(N));
 n_cross = 5
-x_c = Xchange(n_cross);
-new_x = []
-for i in list(range(0,pop_size,2)):
-    z = cross(x[i],x[i+1],x_c)
-    new_x.append(variation(z[0]))
-    new_x.append(variation(z[1]))
-fitvalue = [];
+for i in list(range(1500)):
+    x = generation(x)
+ob = [];
 for i in list(range(pop_size)):
-    fitvalue.append(obf(new_x[i],city_coord))
-P_in,Acp = [],[];
-allfv = sum(fitvalue);
-Acd = 0;
-for i in list(range(pop_size)):
-    Acd = Acd+fitvalue[i]
-    P_in.append(fitvalue[i]/allfv);
-    Acp.append(Acd/allfv)
-
-
+    ob.append(obf(x[i],city_coord))
+print(min(ob))
