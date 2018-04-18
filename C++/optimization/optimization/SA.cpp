@@ -6,12 +6,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+#include <ctime>
 using namespace std;
 
 #define N 30  // number of cities
-#define M 1500 //number of iterative
+#define M 1000 //number of iterative
 int x[N];
 double coord[N][2];
+clock_t  Begin, End;
+double duration;
 
 double random()
 {
@@ -80,7 +83,7 @@ void iterative_inner(double t_0, int iter_num)
 		f_i = obf(x);
 		x_1 = nerighbor_city(x);
 		f_j = obf(x_1);
-		delta_f = (f_j - f_i)/20;
+		delta_f = (f_j - f_i)/200;
 		//cout << "x_0:" << '\t';
 		//for (int i = 0; i < N; i++)
 		//	cout << x[i] << "->";
@@ -110,13 +113,14 @@ void iterative_inner(double t_0, int iter_num)
 	}
 }
 
-double initT(int K,int *x)
+double initT(int K)
 {
-	int n = 500;
+	int n = 500,a[N];
 	double f_1=0,f_2 = 0,detal_0;
 	double f[500];
 	for (int i = 0; i < n; i++)
 	{
+		randomlize(a,N);
 		f[i] = obf(x);
 		f_1 = f_1 + f[i];
 	}
@@ -131,6 +135,7 @@ double initT(int K,int *x)
 
 void main()
 {
+	Begin = clock();
 	srand((unsigned)time(NULL));
 	double P;
 	int i;
@@ -148,14 +153,22 @@ void main()
 		x[i] = i;
 	randomlize(x, N);
 	double T[M];
-	T[0] = initT(5, x);
+	T[0] = 2700;//initT(5);
+	cout << "the begin T is:\t" << initT(5) << endl;
 	for (int i = 1; i < M; i++)
 	{
-		T[i] = T[i - 1] * 0.95;
-		iterative_inner(T[i], 150);
+		T[i] = T[i - 1] * 0.98;
+		iterative_inner(T[i], 100);
 		//cout << "The T is:" << T[i] << endl;
 		//cout << "this result is:" << '\t' << obf(x) << endl;
 	}
 	cout << '\n' << "the last result is:" << '\t' << obf(x) << endl;
+	for (int i = 0; i < N; i++)
+	{
+		cout << x[i] << "->";
+	}
+	End = clock();
+	duration = double(End - Begin) / CLK_TCK;
+	cout << '\n'<<"duration=" << duration << endl;
 	system("pause");
 }

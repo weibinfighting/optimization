@@ -3,14 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="371413b4-1f83-49f9-8442-b1fddedd564a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/C++/optimization/.vs/optimization/v14/.suo" afterPath="$PROJECT_DIR$/C++/optimization/.vs/optimization/v14/.suo" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/Debug/optimization.exe" afterPath="$PROJECT_DIR$/C++/optimization/Debug/optimization.exe" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/Debug/optimization.ilk" afterPath="$PROJECT_DIR$/C++/optimization/Debug/optimization.ilk" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/Debug/optimization.pdb" afterPath="$PROJECT_DIR$/C++/optimization/Debug/optimization.pdb" />
+      <change beforePath="$PROJECT_DIR$/C++/optimization/optimization.VC.db" afterPath="$PROJECT_DIR$/C++/optimization/optimization.VC.db" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/SA.obj" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/SA.obj" />
+      <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/optimization.log" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/optimization.log" />
+      <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/optimization.tlog/CL.read.1.tlog" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/optimization.tlog/CL.read.1.tlog" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/vc140.idb" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/vc140.idb" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/vc140.pdb" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/vc140.pdb" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/SA.cpp" afterPath="$PROJECT_DIR$/C++/optimization/optimization/SA.cpp" />
-      <change beforePath="$PROJECT_DIR$/QA.py" afterPath="$PROJECT_DIR$/QA.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QA.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QA.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="394">
@@ -70,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TSP.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TSP.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TSP.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -175,8 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,6 +194,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -451,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524031115046</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="QA compelet but don't work">
+      <created>1524041192138</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1524041192138</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -465,15 +475,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6664145" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="295" height="584" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2611367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6611195" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="295" height="584" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2611367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31797236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33509833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34039333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10514372" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -539,7 +550,8 @@
     <MESSAGE value="QA cross compelet" />
     <MESSAGE value="QA variation compelet" />
     <MESSAGE value="SA C++ compelet" />
-    <option name="LAST_COMMIT_MESSAGE" value="SA C++ compelet" />
+    <MESSAGE value="QA compelet but don't work" />
+    <option name="LAST_COMMIT_MESSAGE" value="QA compelet but don't work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1009,21 +1021,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TSP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="1667" column="0" lean-forward="false" selection-start-line="1667" selection-start-column="0" selection-end-line="1667" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,7 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,6 +1046,16 @@
             <element signature="e#1636#1919#0" expanded="false" />
             <element signature="e#1944#3122#0" expanded="false" />
             <element signature="e#3158#3450#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TSP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
