@@ -120,8 +120,10 @@ double initT(int K)
 	double f[500];
 	for (int i = 0; i < n; i++)
 	{
+		for (int i = 0; i < N; i++)
+			a[i] = i;
 		randomlize(a,N);
-		f[i] = obf(x);
+		f[i] = obf(a);
 		f_1 = f_1 + f[i];
 	}
 	double average_f;
@@ -153,7 +155,7 @@ void main()
 		x[i] = i;
 	randomlize(x, N);
 	double T[M];
-	T[0] = 2700;//initT(5);
+	T[0] = initT(5);
 	cout << "the begin T is:\t" << initT(5) << endl;
 	for (int i = 1; i < M; i++)
 	{

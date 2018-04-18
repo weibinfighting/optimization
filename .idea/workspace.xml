@@ -10,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/C++/optimization/optimization.VC.db" afterPath="$PROJECT_DIR$/C++/optimization/optimization.VC.db" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/SA.obj" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/SA.obj" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/optimization.log" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/optimization.log" />
-      <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/optimization.tlog/CL.read.1.tlog" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/optimization.tlog/CL.read.1.tlog" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/vc140.idb" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/vc140.idb" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/Debug/vc140.pdb" afterPath="$PROJECT_DIR$/C++/optimization/optimization/Debug/vc140.pdb" />
       <change beforePath="$PROJECT_DIR$/C++/optimization/optimization/SA.cpp" afterPath="$PROJECT_DIR$/C++/optimization/optimization/SA.cpp" />
@@ -59,7 +58,7 @@
       <file leaf-file-name="QA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
+            <state relative-caret-position="1564">
               <caret line="190" column="22" lean-forward="false" selection-start-line="190" selection-start-column="22" selection-end-line="190" selection-end-column="22" />
               <folding>
                 <element signature="e#22#35#0" expanded="true" />
@@ -178,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,7 +195,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -461,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524041192138</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="SA c++ well work">
+      <created>1524058985514</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1524058985514</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -475,16 +481,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6611195" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="295" height="584" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6565809" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="295" height="584" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2611367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31797236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34039333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34266263" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10514372" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -551,7 +556,8 @@
     <MESSAGE value="QA variation compelet" />
     <MESSAGE value="SA C++ compelet" />
     <MESSAGE value="QA compelet but don't work" />
-    <option name="LAST_COMMIT_MESSAGE" value="QA compelet but don't work" />
+    <MESSAGE value="SA c++ well work" />
+    <option name="LAST_COMMIT_MESSAGE" value="SA c++ well work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1037,7 +1043,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/QA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="1564">
           <caret line="190" column="22" lean-forward="false" selection-start-line="190" selection-start-column="22" selection-end-line="190" selection-end-column="22" />
           <folding>
             <element signature="e#22#35#0" expanded="true" />
