@@ -41,7 +41,7 @@ def distance(x,y):
         print('Please check type of x_1 and x_2')
         exit(1)
 
-def obf(x=None,coord=None):
+def obf(x,coord):
     if x == None or coord == None:
         print('The parament is None!');
         exit(1);
@@ -52,41 +52,47 @@ def obf(x=None,coord=None):
     return D
 
 
-def initnum(N=30):
+def initnum(N):
+    '''
+    product N random numbers
+    N paraments:param N:
+    N random number:return:
+    '''
     class Cnum:
-        data=[];
-        index=[];
+        order_data=[];
+        order_index=[];
 
     for n in list(range(N)):
-        Cnum.data.append(random.random());
-        Cnum.index.append(n)
-    x = sorted(Cnum.data)
-    A = []
+        Cnum.order_data.append(random.random());
+        Cnum.order_index.append(n)
+    sort_data = sorted(Cnum.order_data)
+    sorted_data = []
     for i in list(range(N)):
         for j in list(range(N)):
-            if x[i]==Cnum.data[j]:
-                A.append(Cnum.index[j]);
+            if sort_data[i]==Cnum.order_data[j]:
+                sorted_data.append(Cnum.order_index[j]);
             else:
                 continue;
-    return A
+    return sorted_data
 
 def Xchange(n_cross):
-    Xc,n = [],1;
-    while n <=n_cross:
+    '''
+    The X numbers do cross;
+    the number of crossing : param n_cross:
+    which order of solution is crossed : return:
+    '''
+    X_cross, i_cross = [], 0;  #X_cross is the order of solution is crossed, n is count number
+    while i_cross < n_cross:
         newx = math.floor(random.random()*N)
-        ifT = 1
-        for i in Xc:
-            if i==newx:
-                ifT = 0
-        if ifT==1:
-            Xc.append(newx)
-            n = n+1;
+        if newx not in X_cross:
+            X_cross.append(newx)
+            i_cross = i_cross+1;
         else:
             continue;
-    return Xc
+    return X_cross
 
-def cross(x,y,qc):
-    l_x,l_y = len(x),len(y)
+def cross(x_cross,y_cross,qc):
+    l_x,l_y = len(x_cross),len(y_cross)
     if l_x!=l_y:
         print('two parm lengh is not same!\n')
         exit(1);
@@ -95,9 +101,9 @@ def cross(x,y,qc):
         value = [];
         index = [];
     for i in qc:
-        zx.value.append(x[i])
+        zx.value.append(x_cross[i])
     for x_v in zx.value:
-        zx.index.append(y.index(x_v))
+        zx.index.append(y_cross.index(x_v))
     z_x = []
     z_xs = sorted(zx.index)
     m = 0

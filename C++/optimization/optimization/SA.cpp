@@ -1,12 +1,11 @@
 
-
-#include "stdafx.h"
 #include<iostream>
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
 #include <ctime>
+#include <fstream>
 using namespace std;
 
 #define N 30  // number of cities
@@ -16,7 +15,7 @@ double coord[N][2];
 clock_t  Begin, End;
 double duration;
 
-double random()
+double randomnum()
 {
 	return (double)rand() / RAND_MAX;
 }
@@ -64,10 +63,10 @@ int *nerighbor_city(int x[N])
 	static int X[N];
 	for (int i = 0; i < N; i++)
 		X[i] = x[i];
-	a = floor(random()*N);
+	a = floor(randomnum()*N);
 	do
 	{
-		b = floor(random()*N);
+		b = floor(randomnum()*N);
 	} while (a==b);
 	X[a] = x[b];
 	X[b] = x[a];
@@ -99,7 +98,7 @@ void iterative_inner(double t_0, int iter_num)
 		{
 			A_ij = exp(-delta_f / t_0);
 		}
-		if (A_ij>random())
+		if (A_ij>randomnum())
 		{
 			for (int i = 0; i < N; i++)
 			{
@@ -135,21 +134,21 @@ double initT(int K)
 	return detal_0*K;
 }
 
-void main()
-{
+int main(){
 	Begin = clock();
 	srand((unsigned)time(NULL));
 	double P;
 	int i;
 	float read1, read2;
-	FILE *fp;
+	ifstream fp("DATA30.dat");
 
-	fopen_s(&fp, "DATA30.dat", "r");
-	for (i = 0; i <= N; i++) {
-		fscanf_s(fp, "%f %f", &read1, &read2);
+	fp.open("DATA30.dat", ios::in);
+    while(!fp.eof()){
+        char read[10];
+	    fp.getline(read,10);
 		coord[i][0] = read1; coord[i][1] = read2;
 	}
-	fclose(fp);
+	fp.close();
 
 	for (int i = 0; i < N; i++)
 		x[i] = i;
@@ -170,7 +169,7 @@ void main()
 		cout << x[i] << "->";
 	}
 	End = clock();
-	duration = double(End - Begin) / CLK_TCK;
-	cout << '\n'<<"duration=" << duration << endl;
+	duration = double(End - Begin);
 	system("pause");
+	return 0;
 }
