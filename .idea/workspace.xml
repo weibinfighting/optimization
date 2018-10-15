@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="371413b4-1f83-49f9-8442-b1fddedd564a" name="Default" comment="QA.py change">
+    <list default="true" id="371413b4-1f83-49f9-8442-b1fddedd564a" name="Default" comment="QA.py change2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QA.py" beforeDir="false" afterPath="$PROJECT_DIR$/QA.py" afterDir="false" />
     </list>
@@ -25,7 +25,7 @@
     <SUITE FILE_PATH="coverage/optimization$Simulated_Annealing_Algorithm.coverage" NAME="Simulated Annealing Algorithm Coverage Results" MODIFIED="1522151642857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/optimization$new_problem.coverage" NAME="new problem Coverage Results" MODIFIED="1522374139062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/optimization$TSP.coverage" NAME="TSP Coverage Results" MODIFIED="1524030913712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/optimization$QA.coverage" NAME="QA Coverage Results" MODIFIED="1539590577298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/optimization$QA.coverage" NAME="QA Coverage Results" MODIFIED="1539593950279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -45,24 +45,27 @@
     <session id="-723635819">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="91" />
-          <entry key="py" value="30" />
+          <entry key="Python Console" value="96" />
+          <entry key="py" value="62" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="121" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="158" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -75,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/QA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="139" column="25" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="25" />
+            <state relative-caret-position="332">
+              <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
               <folding>
                 <element signature="e#22#35#0" expanded="true" />
                 <element signature="e#83#457#0" />
@@ -160,6 +163,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,7 +193,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -490,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539588754825</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="QA.py change2">
+      <created>1539592462225</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1539592462225</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -507,13 +517,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10258359" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10410334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25307557" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25307557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5330261" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -522,7 +533,7 @@
       <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.32996634" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32864675" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="11" visible="true" weight="0.258348" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.26010546" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32996634" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32864675" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
@@ -589,7 +600,8 @@
     <MESSAGE value="QA compelet but don't work" />
     <MESSAGE value="SA c++ well work" />
     <MESSAGE value="QA.py change" />
-    <option name="LAST_COMMIT_MESSAGE" value="QA.py change" />
+    <MESSAGE value="QA.py change2" />
+    <option name="LAST_COMMIT_MESSAGE" value="QA.py change2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SA.txt" />
@@ -639,8 +651,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/QA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="139" column="25" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="25" />
+        <state relative-caret-position="332">
+          <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
           <folding>
             <element signature="e#22#35#0" expanded="true" />
             <element signature="e#83#457#0" />

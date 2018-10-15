@@ -74,14 +74,7 @@ def Xchange(n_cross):
     the number of crossing : param n_cross:
     which order of solution is crossed : return:
     '''
-    X_cross, i_cross = [], 0;  #X_cross is the order of solution is crossed, n is count number
-    while i_cross < n_cross:
-        newx = math.floor(random.random()*N)
-        if newx not in X_cross:
-            X_cross.append(newx)
-            i_cross = i_cross+1;
-        else:
-            continue;
+    X_cross = random.sample(range(N),n_cross)
     return X_cross
 
 def cross(x_cross,y_cross,qc):
