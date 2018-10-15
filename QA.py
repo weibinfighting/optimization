@@ -54,25 +54,18 @@ def obf(x,coord):
 
 def initnum(N):
     '''
-    product N random numbers
+    product N random numbers from 0 to N
     N paraments:param N:
     N random number:return:
     '''
-    class Cnum:
-        order_data=[];
-        order_index=[];
+    order_data=[];
 
-    for n in list(range(N)):
-        Cnum.order_data.append(random.random());
-        Cnum.order_index.append(n)
-    sort_data = sorted(Cnum.order_data)
+    for i in list(range(N)):
+        order_data.append(random.random());
+    sort_data = sorted(order_data)
     sorted_data = []
     for i in list(range(N)):
-        for j in list(range(N)):
-            if sort_data[i]==Cnum.order_data[j]:
-                sorted_data.append(Cnum.order_index[j]);
-            else:
-                continue;
+        sorted_data.append(order_data.index(sort_data[i]))
     return sorted_data
 
 def Xchange(n_cross):
