@@ -118,14 +118,14 @@ def cross(x_cross,y_cross,qc):
             z_x.append(zx.value[zx.index.index(z_xs[m])]);
             m = m+1;
         else:
-            z_x.append(x[i])
+            z_x.append(x_cross[i])
     class zy:
         value = [];
         index = [];
     for i in qc:
-        zy.value.append(y[i])
+        zy.value.append(y_cross[i])
     for y_v in zy.value:
-        zy.index.append(x.index(y_v))
+        zy.index.append(x_cross.index(y_v))
     z_y = []
     z_ys = sorted(zy.index)
     m = 0
@@ -140,7 +140,7 @@ def cross(x_cross,y_cross,qc):
             z_y.append(zy.value[zy.index.index(z_ys[m])]);
             m=m+1
         else:
-            z_y.append(y[i])
+            z_y.append(y_cross[i])
     return z_x,z_y
 
 def variation(X,P=0.02,qn=2):
