@@ -2,6 +2,7 @@
 
 import random
 import math
+import heapq
 
 
 def readcitycoord(filename):
@@ -22,7 +23,7 @@ def readcitycoord(filename):
     f.close()
     return a
 
-N,pop_size = 30,50
+N,pop_size = 30,200
 filename = 'DATA30.dat'
 city_coord = readcitycoord(filename)
 
@@ -129,39 +130,42 @@ def cross(x_cross,y_cross,qc):
             z_y.append(y_cross[i])
     return z_x,z_y
 
-def variation(X,P=0.02,qn=2):
+def variation(X,P=0.01,qn=2):
     if random.random()<=P:
         n = math.floor(random.random()*N);
         m = math.floor(random.random()*N);
         while n==m:
             m = math.floor(random.random()*N);
-        variable = X[n];
-        X[n] = X[m];
-        X[m] = variable;
+        X[n], X[m]=X[m],X[n];
         return X;
     else:
         return X;
 
 def findgroup(pop_size,Acp):
     next_p = random.random();
-    for i in list(range(pop_size)):
-        if Acp[i]<next_p and next_p<=Acp[i+1]:
+    if next_p <= Acp[0]:
+        return 0;
+    for i in list(range(1,pop_size)):
+        if Acp[i-1]<next_p and next_p<=Acp[i]:
             return i;
-        elif 0<next_p and next_p<=Acp[0]:
-            return 0;
         else:
             continue;
 
 def generation(x):
     x_c = Xchange(n_cross);
     new_x = []
-    for i in list(range(0,pop_size,2)):
+    for i in list(range(0,pop_size-2,2)):
         z = cross(x[i],x[i+1],x_c)
         new_x.append(variation(z[0]))
         new_x.append(variation(z[1]))
+    Fit = [];
+    for i in list(range(pop_size)):
+        Fit.append(obf(x[i], city_coord))
+    new_x.append(x[Fit.index(heapq.nsmallest(2,Fit)[0])])
+    new_x.append(x[Fit.index(heapq.nsmallest(2,Fit)[1])])
     fitvalue = [];
     for i in list(range(pop_size)):
-        fitvalue.append(obf(new_x[i],city_coord))
+        fitvalue.append(M-obf(new_x[i],city_coord))
     Acp = [];
     allfv = sum(fitvalue);
     Acd = 0;
@@ -180,9 +184,13 @@ x=[];
 for i in list(range(pop_size)):
     x.append(initnum(N));
 n_cross = 5
+M=2000
 for i in list(range(1500)):
     x = generation(x)
+    for j in list(range(pop_size)):
+        print(obf(x[j],city_coord))
 ob = [];
 for i in list(range(pop_size)):
     ob.append(obf(x[i],city_coord))
 print(min(ob))
+print(x[ob.index(min(ob))])
